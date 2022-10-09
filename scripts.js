@@ -31,6 +31,11 @@ function loadFileInto(fromFile, whereTo) {
 }
 
 window.onload = function() {
+  
+  loadFileInto("ingredients.html", "#ingredients ul");
+  loadFileInto("equipment.html", "#equipment ul");
+  loadFileInto("directions.html", "directions ol");
+  
   document.querySelector("#titleBanner h1").classList.add("tp");
   
   document.querySelector("#titleBanner h1").onclick = function() {
@@ -45,5 +50,13 @@ window.onload = function() {
   document.querySelector("#recipeColumns #equipment").onclick = function(){
     this.classlist.toggle('tpShow')
   }
+  
+  document.querySelector("recipeColumns #directions").onclick = function(){
+    this.classlist.toggle('tpShow')
+  }
+  setTimeout(function(){
+  document.querySelector("#recipeColumns #ingredients ul").innerHTML += "<li>Chips of Divine Beings</li>";
+  }, 100)
+  
   
 }
