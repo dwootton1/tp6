@@ -1,0 +1,122 @@
+#titleBanner {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  background-image: url(https://www.simplyrecipes.com/thmb/qoUe-L7_RfIy4NUJwDaqOkxLQRQ=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__07__Guacamole-LEAD-1-47de4e6e47464daba88a7f42155a2af3.jpg);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.7);
+  
+}
+
+
+#titleBanner h1 {
+  font-family: Arial;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 500%;
+  padding: 0;
+  margin: 0 0 2vw 2vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-shadow: 0px 0px #000000;
+  line-height: 80%;
+}
+
+#titleBanner h1.tp {
+  font-size: 100%;
+}
+
+#titleBanner h1.black {
+  color: #000000;
+  text-shadow: 0px 0px #ffffff;
+}
+
+#recipeColumns {
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebe4d8;
+  padding-bottom: 6vh;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.7);
+  
+}
+
+#recipeColumns div#ingredients { flex-basis: 28%; }
+#recipeColumns div#equipment { flex-basis: 20%; }
+#recipeColumns div#directions { flex-basis: 50%; }
+
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol { display: none;
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol {
+  display: block;
+}
+
+#recipeColumns ul,
+#recipeColumns ol {
+  padding-left: 1.1rem;
+}
+
+ul, ol {
+  display: block;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: 9px;
+  font-style: italic;
+}
+
+#ingredients {
+  position: absolute; 
+  top: 0;
+  left 0;
+  witdh: 30vh;
+  height: 3.1 rem;
+    
+  
+}
+
+#equipment{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  
+}
+
+#directions{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  
+  
+}
+
+@media and screen and (max-width: px786)
+*{ content: border-box;
+  .row{
+    width: 33vw;
+    border: 0
+  }
+  
+@media and screen and (min-width: px786)
+  *{ content: border-box;
+    .row{
+      width: 100%;
+      border: 0;
+    }
+    
+  }
+ 
+  
+}
